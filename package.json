@@ -1,0 +1,28 @@
+{
+  "name": "netlify-functions-landingpage",
+  "version": "0.1.0",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "netlify-lambda": "^0.4.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4",
+    "request": "^2.85.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build": "react-scripts build",
+    "build:lambda": "netlify-lambda build src/lambda",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
+  }
+}

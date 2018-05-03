@@ -1,0 +1,222 @@
+/* Import fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background: #fff;
+    margin: 0;
+    color: #5a5a5a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+
+p {
+    padding: 0;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #666;
+    margin-top: 10px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+}
+.centered {
+    text-align: center
+}
+.mt {
+    margin-top: 50px;
+}
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width:100%;
+}
+::-moz-selection  {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #2B2E31;
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: background-color .4s linear, color .4s linear;
+    color: #1abc9c;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:#696E74;
+}
+
+.btn-green {
+    background: #1abc9c;
+    color: white;
+    border-radius: 2px;
+}
+
+.btn-green:hover {
+    background: #16a085;
+    color: white;
+}
+
+hr {
+    border: 1px solid #1abc9c;
+    width: 120px;
+}
+
+h4 {
+    font-weight: 700;
+}
+
+#root {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+.App {
+    text-align: center;
+    width:100%;
+}
+
+.landing-page {
+    background: url(./computer.jpg) no-repeat center top;
+    padding-top: 60px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+    background-size: 100%;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.landing-page .container {
+    z-index: 3;
+    position: relative;
+}
+.backdrop {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.35);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.landing-page h3.logo {
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-bottom: 120px;
+    border: 3px solid white;
+    width: 305px;
+    padding: 12px;
+}
+.landing-page h1 {
+    color: white;
+    font-size: 70px;
+    letter-spacing: -2px;
+    word-spacing: 3px;
+}
+.landing-page h2 {
+    color: white;
+}
+
+.landing-page .continue {
+    font-size: 30px;
+    color: #1abc9c;
+    margin-top: 80px;
+}
+
+/* GENERAL CONF */
+i {
+    margin-right: 10px;
+}
+
+input {
+    font-size: 18px;
+    min-height: 40px;
+    border-radius: 2px;
+    line-height: 20px;
+    padding: 11px 30px 12px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #e9f0f2;
+    transition: background-color 0.2s;
+}
+
+.sign-up {
+    float: left;
+    width: 70%;
+    text-align: left;
+    margin-right: 2px;
+}
+
+.sign-up-button {
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .sign-up {
+        width: 70%;
+    }
+    .landing-page h1 {
+        font-size: 35px;
+    }
+    .landing-page h3.logo {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 570px) {
+    .sign-up {
+        width: 100%;
+    }
+}
