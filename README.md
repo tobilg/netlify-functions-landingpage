@@ -109,4 +109,4 @@ You can start the local lambda function "backend" via `MAILCHIMP_API_KEY=yourkey
 
 ### Start application
 
-You can start the application via `npm rum start`. This should with the before started lambda function out of the box.
+You can start the application via `npm rum start`. This should work with the before started lambda function out of the box.
