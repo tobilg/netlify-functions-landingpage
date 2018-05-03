@@ -57,10 +57,10 @@ Please note the (full) `API key`, because this is later needed as an environment
 <p align="center"><img alt="Netlify new site" src="docs/images/netlify_new_site.png" width="500"/></p>
 
 **Step 2:**
-<p align="center"><img alt="Netlify authorize" src="docs/images/netlify_authorize.png" width="400"/></p>
+<p align="center"><img alt="Netlify create site 1" src="docs/images/netlify_create_site_1.png" width="500"/></p>
 
 **Step 3:**
-<p align="center"><img alt="Netlify create site 1" src="docs/images/netlify_create_site_1.png" width="500"/></p>
+<p align="center"><img alt="Netlify authorize" src="docs/images/netlify_authorize.png" width="400"/></p>
 
 **Step 4:**
 <p align="center"><img alt="Netlify create site 2" src="docs/images/netlify_create_site_2.png" width="500"/></p>
