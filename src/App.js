@@ -73,7 +73,7 @@ export default class App extends Component {
             <div className='container'>
             <div className="row centered">
             <h3 className="logo aligncenter">
-            Serverless Components
+            Netlify functions landing page example
         </h3>
 
         <h1>
