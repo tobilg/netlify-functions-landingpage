@@ -6,11 +6,15 @@ I read the interesting article on the [Serverless blog](https://serverless.com/b
 
 I wanted to test Netlify for a while now, but thought that the above example could still be stripped-down to a Netlify-only deployment. The Mailchimp API is still triggered via the included Lambda function for the signup.
 
+The original project can be found at [serverless/netlify-landing-page](https://github.com/serverless/netlify-landing-page/), which was slightly edited to support a Netlify-only setup.
+
 ## Setup
 
 1. Fork the [project](https://github.com/tobilg/netlify-functions-landingpage) to your GitHub, GitLab or Bitbucket account
 2. Sign up for Mailchimp (free account), for being able to create the mailing list funtionality
 3. Sign up for Netlify (free account), using the OAuth integration to the repo provider you forked the project to.
+
+Having an AWS account is not necessary, as Netlify will provision the lambda automatically.
 
 ### Mailchimp setup
 
@@ -75,7 +79,8 @@ After that, the site should trigger its first deployment automatically.
 **Step 1:**
 <p align="center"><img alt="Netlify build variables 1" src="docs/images/netlify_build_variables_1.png" width="600"/></p>
 
-**Step 2:**
+**Step 2:**  
+Fill in the real values that you gathered in the Mailchimp setup steps.
 <p align="center"><img alt="Netlify build variables 2" src="docs/images/netlify_build_variables_2.png" width="400"/></p>
 
 #### Trigger deployment
@@ -91,3 +96,17 @@ the site should be redeployed, and be using the provided environment variables f
 You should then be able to check the function logs
 
 <p align="center"><img alt="Netlify function logs" src="docs/images/netlify_function_logs.png" width="400"/></p>
+
+## Running locally
+
+### Install dependencies
+
+You can run a `npm i` to install the project's dependencies.
+
+### Start signup lambda function
+
+You can start the local lambda function "backend" via `MAILCHIMP_API_KEY=yourkey MAILCHIMP_LIST_ID=yourlistid MAILCHIMP_REGION=yourregion npm rum start:lambda`.
+
+### Start application
+
+You can start the application via `npm rum start`. This should with the before started lambda function out of the box.
