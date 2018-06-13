@@ -105,8 +105,8 @@ You can run a `npm i` to install the project's dependencies.
 
 ### Start signup lambda function
 
-You can start the local lambda function "backend" via `MAILCHIMP_API_KEY=yourkey MAILCHIMP_LIST_ID=yourlistid MAILCHIMP_REGION=yourregion npm rum start:lambda`.
+You can start the local lambda function "backend" via `MAILCHIMP_API_KEY=yourkey MAILCHIMP_LIST_ID=yourlistid MAILCHIMP_REGION=yourregion npm run start:lambda`.
 
 ### Start application
 
-You can start the application via `npm rum start`. This should work with the before started lambda function out of the box.
+You can start the application via `npm run start`. This should work with the before started lambda function out of the box.
